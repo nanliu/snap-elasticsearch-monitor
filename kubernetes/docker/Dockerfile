@@ -7,7 +7,7 @@ ENV SNAP_VERSION="latest"
 ENV SNAP_TRUST_LEVEL=0
 ENV SNAP_LOG_LEVEL=1
 
-LABEL vendor="candymurf" \
+LABEL vendor="candysmurfhub" \
       name="Alpine 3.4" \
       license="Apache 2.0" \
       build-date=$BUILD_DATE

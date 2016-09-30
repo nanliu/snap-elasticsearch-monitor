@@ -19,7 +19,7 @@ spec:
               - containerPort: 9200
               - containerPort: 9300
             - name: main
-              image: candysmurf/snap-es-mon-k8s:latest
+              image: candysmurfhub/snap-es-mon-k8s:latest
               env:
                 - name: SNAP_VERSION
                   value: "latest"

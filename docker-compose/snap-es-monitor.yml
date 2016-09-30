@@ -2,7 +2,7 @@ version: '2'
 services:
   main:
     container_name: snap-elasticsearch-monitor
-    image: candysmurf/snap-es-monitor:alpine
+    image: candysmurfhub/snap-es-mon-docker:latest
     environment:
       - SNAP_VERSION=latest
     depends_on:
