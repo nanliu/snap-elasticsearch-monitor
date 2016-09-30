@@ -1,0 +1,14 @@
+version: '2'
+services:
+  master:
+    image: elasticsearch:latest
+    ports: 
+      - "9200:9200"
+  node:
+    image: elasticsearch:latest
+    depends_on:
+      - master
+networks:
+  default:
+    external:
+      name: snap-elasticsearch-network

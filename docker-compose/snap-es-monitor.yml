@@ -1,0 +1,35 @@
+version: '2'
+services:
+  main:
+    container_name: snap-elasticsearch-monitor
+    image: candysmurf/snap-es-monitor:alpine
+    environment:
+      - SNAP_VERSION=latest
+    depends_on:
+      - influxdb
+    extra_hosts:
+      - "snap-elasticsearch:192.168.99.100"
+  influxdb:
+    container_name: influxdb
+    image: tutum/influxdb:latest
+    ports:
+      - "8083:8083"
+      - "8086:8086"
+    expose:
+      - "8083" 
+      - "8086"
+    environment:
+      - PRE_CREATE_DB=k8s
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000" 
+    links:
+      - influxdb
+networks:
+  default:
+    external:
+      name: snap-monitor-network
