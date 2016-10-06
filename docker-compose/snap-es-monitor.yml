@@ -1,10 +1,13 @@
 version: '2'
 services:
   main:
+    build: ./snap-elasticsearch-monitor
     container_name: snap-elasticsearch-monitor
-    image: candysmurf/snap-es-monitor:alpine
     environment:
-      - SNAP_VERSION=latest
+      SNAP_VERSION: 0.16.1
+      FILE_PUB_PLUGIN_VER: 2
+      ELASTICSEARCH_COL_PLUGIN_VER: 3
+      INFLUXDB_PUB_PLUGIN_VER: 15
     depends_on:
       - influxdb
     extra_hosts:
