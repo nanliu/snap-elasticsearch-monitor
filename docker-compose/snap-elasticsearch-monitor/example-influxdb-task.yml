@@ -41,7 +41,7 @@
         -
           plugin_name: "influxdb"
           config:
-            host: "snap-elasticsearch"
+            host: "influxdb"
             port: 8086
             database: "k8s"
             user: "admin"

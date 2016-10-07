@@ -1,6 +1,7 @@
 version: '2'
 services:
   master:
+    container_name: snap-elasticsearch
     image: elasticsearch:latest
     ports: 
       - "9200:9200"
