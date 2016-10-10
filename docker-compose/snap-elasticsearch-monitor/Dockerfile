@@ -15,13 +15,3 @@ RUN chmod 755 /opt/snap/plugins/*
 
 COPY example-file-task.yml /opt/snap/plugins/example-file-task.yml 
 COPY example-influxdb-task.yml /opt/snap/plugins/example-influxdb-task.yml
-
-# CMD sleep 120
-
-# COPY grafana-datasource.json /etc/snap/grafana-datasource.json
-# COPY snap-elasticsearch-dashboard.json /etc/snap/snap-elasticsearch-dashboard.json
-# COPY init_grafana /usr/local/bin/init_grafana 
-# CMD chmod 755 /usr/local/bin/init_grafana
-# CMD /usr/local/bin/init_grafana
-
-
