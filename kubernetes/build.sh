@@ -5,7 +5,6 @@ set -u
 set -o pipefail
 
 
-cmd="docker build -t candysmurfhub/snap-es-mon-k8s:latest \
-  --build-arg BUILD_DATE=$(date +%Y-%m-%d)"
+cmd="docker build -t candysmurfhub/snap-es-mon-k8s:latest"
 
-${cmd} -f "docker/Dockerfile" .
+${cmd} -f "snap-elasticsearch-monitor/Dockerfile" .

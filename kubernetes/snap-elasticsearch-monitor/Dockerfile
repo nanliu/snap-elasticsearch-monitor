@@ -13,12 +13,11 @@ ADD http://snap.ci.snap-telemetry.io/plugins/snap-plugin-publisher-influxdb/$INF
 
 RUN chmod 755 /opt/snap/plugins/*
 
-COPY example-file-task.yml /opt/snap/plugins/example-file-task.yml 
-COPY example-influxdb-task.yml /opt/snap/plugins/example-influxdb-task.yml
+COPY example-file-task.yml /opt/snap/tasks/example-file-task.yml 
+COPY example-influxdb-task.yml /opt/snap/tasks/example-influxdb-task.yml
 
 COPY grafana-datasource.json /etc/snap/grafana-datasource.json
 COPY snap-elasticsearch-dashboard.json /etc/snap/snap-elasticsearch-dashboard.json
 COPY init_grafana /usr/local/bin/init_grafana
-RUN chmod +x /usr/local/bin/init_grafana
 
 CMD ["sh", "-c", "/usr/local/bin/install_snap;  /usr/local/bin/init_grafana; /opt/snap/bin/snapd -t ${SNAP_TRUST_LEVEL} -l ${SNAP_LOG_LEVEL}"]

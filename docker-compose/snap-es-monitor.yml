@@ -25,9 +25,9 @@ services:
     environment:
       - PRE_CREATE_DB=k8s
   grafana:
-    build: ./snap-grafana
+    # build: ./snap-grafana
     container_name: grafana
-    # image: grafana/grafana:latest
+    image: grafana/grafana:latest
     ports:
       - "3000:3000"
     expose:

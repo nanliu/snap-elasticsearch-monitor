@@ -31,7 +31,7 @@
     }
   ],
   "id": null,
-  "title": "Snap Elasticsearch Sample",
+  "title": "Snap Elasticsearch Monitor",
   "tags": [],
   "style": "dark",
   "timezone": "browser",
@@ -97,7 +97,7 @@
                   "type": "fill"
                 }
               ],
-              "measurement": "intel/elasticsearch/node/5DvJ_Jj0RFCJtd2acbKWfQ/os/mem/used_percent",
+              "measurement": "intel/elasticsearch/node/os/mem/used_percent",
               "policy": "default",
               "refId": "A",
               "resultFormat": "time_series",
@@ -211,7 +211,7 @@
                   "type": "fill"
                 }
               ],
-              "measurement": "intel/elasticsearch/node/5DvJ_Jj0RFCJtd2acbKWfQ/jvm/mem/heap_used_percent",
+              "measurement": "intel/elasticsearch/node/jvm/mem/heap_used_percent",
               "policy": "default",
               "refId": "A",
               "resultFormat": "time_series",
@@ -247,7 +247,7 @@
                   "type": "fill"
                 }
               ],
-              "measurement": "intel/elasticsearch/node/5DvJ_Jj0RFCJtd2acbKWfQ/jvm/mem/pools/old/used_in_bytes",
+              "measurement": "intel/elasticsearch/node/jvm/mem/pools/old/used_in_bytes",
               "policy": "default",
               "refId": "B",
               "resultFormat": "time_series",
@@ -283,7 +283,7 @@
                   "type": "fill"
                 }
               ],
-              "measurement": "intel/elasticsearch/node/5DvJ_Jj0RFCJtd2acbKWfQ/jvm/mem/pools/young/used_in_bytes",
+              "measurement": "intel/elasticsearch/node/jvm/mem/pools/young/used_in_bytes",
               "policy": "default",
               "refId": "C",
               "resultFormat": "time_series",
@@ -397,7 +397,7 @@
                   "type": "fill"
                 }
               ],
-              "measurement": "intel/elasticsearch/node/5DvJ_Jj0RFCJtd2acbKWfQ/process/cpu/percent",
+              "measurement": "intel/elasticsearch/node/process/cpu/percent",
               "policy": "default",
               "refId": "A",
               "resultFormat": "time_series",
@@ -511,7 +511,7 @@
                   "type": "fill"
                 }
               ],
-              "measurement": "intel/elasticsearch/node/5DvJ_Jj0RFCJtd2acbKWfQ/jvm/gc/collectors/old/collection_count",
+              "measurement": "intel/elasticsearch/node/jvm/gc/collectors/old/collection_count",
               "policy": "default",
               "refId": "A",
               "resultFormat": "time_series",
@@ -547,7 +547,7 @@
                   "type": "fill"
                 }
               ],
-              "measurement": "intel/elasticsearch/node/5DvJ_Jj0RFCJtd2acbKWfQ/jvm/gc/collectors/young/collection_count",
+              "measurement": "intel/elasticsearch/node/jvm/gc/collectors/young/collection_count",
               "policy": "default",
               "refId": "B",
               "resultFormat": "time_series",
@@ -583,7 +583,7 @@
                   "type": "fill"
                 }
               ],
-              "measurement": "intel/elasticsearch/node/5DvJ_Jj0RFCJtd2acbKWfQ/indices/docs/count",
+              "measurement": "intel/elasticsearch/node/indices/docs/count",
               "policy": "default",
               "refId": "C",
               "resultFormat": "time_series",
