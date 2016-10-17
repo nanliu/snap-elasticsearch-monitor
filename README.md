@@ -7,6 +7,8 @@ View blog post [Snap Elasticsearch Collector for Monitoring](https://medium.com/
 ## Run with docker-compose
 Prerequisite is having docker-machine and docker-compose installed.
 
+if it's the very first time, 
+
 After Docker is ready, run command:
 ```
 $ docker-compose -f docker-compose/snap-es-cluster.yml up -d
@@ -23,8 +25,4 @@ $ kubectl create -f kubernetes/deployment --namespace kube-system
 ```
 
 Dashboard is availabe at: http://127.0.0.1:3000
-
-## Disclaimer
-
-This is not an official Intel product (experimental or otherwise), it is just code that happens to be owned by Intel.
 
