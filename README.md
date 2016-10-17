@@ -24,3 +24,7 @@ $ kubectl create -f kubernetes/deployment --namespace kube-system
 
 Dashboard is availabe at: http://127.0.0.1:3000
 
+## Disclaimer
+
+This is not an official Intel product (experimental or otherwise), it is just code that happens to be owned by Intel.
+
