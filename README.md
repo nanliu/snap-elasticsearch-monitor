@@ -7,8 +7,6 @@ View blog post [Snap Elasticsearch Collector for Monitoring](https://medium.com/
 ## Run with docker-compose
 Prerequisite is having docker-machine and docker-compose installed.
 
-if it's the very first time, 
-
 After Docker is ready, run command:
 ```
 $ docker-compose -f docker-compose/snap-es-cluster.yml up -d
