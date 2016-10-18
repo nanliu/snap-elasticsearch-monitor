@@ -9,10 +9,10 @@ services:
       ELASTICSEARCH_COL_PLUGIN_VER: 3
       INFLUXDB_PUB_PLUGIN_VER: 15
     depends_on:
+      - snap-elasticsearch
+      - es-node
       - influxdb
       - grafana
-    extra_hosts:
-      - "snap-elasticsearch:192.168.99.100"
   influxdb:
     container_name: influxdb
     image: tutum/influxdb:latest
@@ -31,9 +31,13 @@ services:
       - "3000:3000"
     expose:
       - "3000" 
-    links:
+    depends_on:
       - influxdb
-networks:
-  default:
-    external:
-      name: snap-monitor-network
+  snap-elasticsearch:
+    image: elasticsearch:latest
+    ports: 
+      - "9200:9200"
+  es-node:
+    image: elasticsearch:latest
+    depends_on:
+      - snap-elasticsearch

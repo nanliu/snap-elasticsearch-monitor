@@ -1,7 +1,7 @@
 {
   "name":"SNAP",
   "type":"influxdb",
-  "url":"http://192.168.99.100:8086",
+  "url":"http://influxdb:8086",
   "access":"proxy",
   "basicAuth":false,
   "database":"k8s",

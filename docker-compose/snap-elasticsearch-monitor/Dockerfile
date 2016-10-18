@@ -21,4 +21,4 @@ COPY snap-elasticsearch-dashboard.json /etc/snap/snap-elasticsearch-dashboard.js
 COPY init_grafana /usr/local/bin/init_grafana
 RUN chmod +x /usr/local/bin/init_grafana
 
-CMD ["sh", "-c", "/usr/local/bin/install_snap;  /usr/local/bin/init_grafana; /opt/snap/bin/snapd -t ${SNAP_TRUST_LEVEL} -l ${SNAP_LOG_LEVEL}"]
+CMD ["sh", "-c", "/usr/local/bin/install_snap;  /usr/local/bin/init_grafana;  /opt/snap/bin/snapd -t ${SNAP_TRUST_LEVEL} -l ${SNAP_LOG_LEVEL}"]

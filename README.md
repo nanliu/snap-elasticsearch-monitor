@@ -9,7 +9,6 @@ Prerequisite is having docker-machine and docker-compose installed.
 
 After Docker is ready, run command:
 ```
-$ docker-compose -f docker-compose/snap-es-cluster.yml up -d
 $ docker-compose -f docker-compose/snap-es-monitor.yml up -d
 ```
 Dashboard is available at: http://[dockerhost]:3000
