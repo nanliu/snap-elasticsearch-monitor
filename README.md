@@ -21,5 +21,5 @@ After Minikube is ready, run command:
 $ kubectl create -f kubernetes/deployment --namespace kube-system
 ```
 
-Dashboard is availabe at: http://127.0.0.1:3000
+Dashboard is availabe at: http://127.0.0.1:3000 after the port forwarding.
 
